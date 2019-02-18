@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Savings Calculator</title>
+  <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+  <div class="container">
+    <h2>Fairly Good Savings Calculator</h2>
+    <form id='dataEntry'>
+      <input placeholder = "initial" id="initial" type="number" required pattern="[0-9]{1-15}">
+      <input placeholder = "interest (PA)" id="interest" type="number" step="0.01" required >
+      <input placeholder = "term (years)" id="term" type="number" required pattern="[0-9]{1-15}"> 
+      <input placeholder = "contributions (weekly)" id="contributions" type="number" required pattern="[0-9]{1-15}"> 
+    </form>
+  </div>
+  <div class="container2">
+    <span id="output">... ready</span>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
